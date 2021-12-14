@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if($_SESSION['flag'] ==1)
 {
 include("connect.php");
@@ -33,8 +34,9 @@ echo "<!DOCTYPE html>
     <label>رقم الهاتف</label>
     <input type = 'number' name='phone'> <br>
     <input type ='submit' value='add'><br> 
-    <a href='login.php'>الدخول بمستخدم</a>
-    <a href='cal.php'>حساب التقسيط </a>
+    <a href='login.php'>الدخول بمستخدم</a><br>
+    <a href='cal.php'>حساب التقسيط </a><br>
+    <a href ='data_client.php'>اضافة قسط لعميل</a><br>
     
 </form>
 </div>
